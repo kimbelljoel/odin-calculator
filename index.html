@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div id="display">0</div>
+        <div class="container">
+        <div class="operand-container">
+            <button onclick="clickedClear()" class="operand">C</button>
+            <button onclick="clickedNegative()" class="operand">+/-</button>
+            <button onclick="clickedPercent()" class="operand">%</button>
+            <button onclick="clicked(7)" class="operand">7</button>
+            <button onclick="clicked(8)" class="operand">8</button>
+            <button onclick="clicked(9)" class="operand">9</button>
+            <button onclick="clicked(4)" class="operand">4</button>
+            <button onclick="clicked(5)" class="operand">5</button>
+            <button onclick="clicked(6)" class="operand">6</button>
+            <button onclick="clicked(1)" class="operand">1</button>
+            <button onclick="clicked(2)" class="operand">2</button>
+            <button onclick="clicked(3)" class="operand">3</button>
+            
+            <button onclick="clicked(0)" class="operand zero">0</button>
+            <button onclick="clickedBackspace()" class="operand">&#x232b;</button>
+        </div>
+        <div class="operator-container">
+            <button onclick="clickedOperator('divide')" class="operator">/</button>
+            <button onclick="clickedOperator('multiply')" class="operator">*</button>
+            <button onclick="clickedOperator('subtract')" class="operator">-</button>
+            <button onclick="clickedOperator('add')" class="operator">+</button>
+            <button onclick="clickedEquals()" class="operator">=</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
